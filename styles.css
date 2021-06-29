@@ -49,14 +49,14 @@ nav{
 
 .nav-link.show{
     opacity: 1;
-    z-index: 1;
+    display: block;
     
 }
 
 .nav-link{
     opacity: 0;
-    z-index: 0;
-    transition:opacity 0.5s ease-out;
+    display:none;
+    transition:opacity 0.5s ease-out,display 0.5s ease-out;
     transition-delay: 0.2s;
 }
 .menu-button{
@@ -70,7 +70,7 @@ nav{
     height: 30px;
 }
 .#menu-image{
-    transition: rotate 0.5s ease-out;
+    transition: transform 0.5s ease-out;
 }
 #menu-image.rotate{
     transform: rotate(180deg);
